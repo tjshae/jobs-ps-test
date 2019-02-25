@@ -10,7 +10,6 @@ import Vapor
 import Jobs
 import FluentPostgreSQL
 import NIO
-import JSON
 
 
 /// A wrapper that conforms to `JobsPersistenceLayer`

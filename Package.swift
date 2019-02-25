@@ -16,7 +16,7 @@ let package = Package(
     targets: [
         .target(
             name: "JobsPostgreSQLDriver",
-            dependencies: ["Jobs", "PostgreSQLProvider"]),
+            dependencies: ["Jobs", "FluentPostgreSQL"]),
         .testTarget(
             name: "JobsPostgreSQLDriverTests",
             dependencies: ["JobsPostgreSQLDriver"]),
