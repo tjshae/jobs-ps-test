@@ -104,15 +104,15 @@ enum JobState: String, Codable {
   case processing = "processing"
   case completed = "completed"
 }
-final class JobModel: PostgreSQLModel {
+public final class JobModel: PostgreSQLModel {
   /// Types
-  typealias Database = PostgreSQLDatabase
-  typealias ID = Int
-  static let idKey: IDKey = \.id
+  public typealias Database = PostgreSQLDatabase
+  public typealias ID = Int
+  public static let idKey: IDKey = \.id
   
   /// Properties
-  static let entity = "job"
-  var id: Int?
+  public static let entity = "job"
+  public var id: Int?
   
   /// The Job key
   var key: String
