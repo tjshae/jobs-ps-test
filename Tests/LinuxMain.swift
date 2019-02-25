@@ -3,5 +3,5 @@ import XCTest
 import JobsRedisDriverTests
 
 var tests = [XCTestCaseEntry]()
-tests += JobsRedisDriverTests.allTests()
+tests += JobsPostgreSQLDriverTests.allTests()
 XCTMain(tests)
